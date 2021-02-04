@@ -2,21 +2,21 @@
 
 This is a beautifull Colorful Responsive Portfolio
 
-![](./image/1.png)
+![](./screen/1.png)
 
-![](./image/2.png)
-
-
-![](./image/3.png)
+![](./screen/2.png)
 
 
-![](./image/4.png)
+![](./screen/3.png)
 
 
-![](./image/5.png)
+![](./screen/4.png)
 
 
-![](./image/6.png)
+![](./screen/5.png)
 
 
-![](./image/7.png)
+![](./screen/6.png)
+
+
+![](./screen/7.png)
