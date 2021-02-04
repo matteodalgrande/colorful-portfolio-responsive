@@ -1,0 +1,181 @@
+body {background: #801638;}
+body,
+.container {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+* {
+  transition: all 0.3s ease 0s;
+}
+
+/* Colours */
+::selection {
+  background: #000 !important;
+  color: #fff !important;
+}
+::-moz-selection {
+  background: #000 !important;
+  color: #fff !important;
+}
+body > div {
+  background: #801638;
+}
+body > div article:nth-child(1) {
+  background: #c22326;
+}
+body > div article:nth-child(2) {
+  background: #f37338;
+}
+body > div article:nth-child(3) {
+  background: #fdb632;
+}
+body > div article:nth-child(4) {
+  background: #027878;
+}
+body > div article:nth-child(5) {
+  background: #801638;
+}
+
+/* Main layout */
+html,
+body,
+body > div {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin:0px;
+  border: 0px;
+}
+body > div {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+/* Articles */
+body > div article {
+  flex: initial;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 2vh 1vw;
+  position: relative;
+}
+
+/* Hover interaction */
+body > div:hover article {
+  flex: initial;
+  width: 7%;
+}
+body > div article:hover {
+  width: 72%;
+}
+article > div {
+  opacity: 0;
+  transition: opacity 0.2s ease 0;
+}
+article:hover > div {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.3s;
+}
+
+/* navigation */
+body > div article > h2 {
+  bottom: 2.2vh;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 3vh;
+}
+body > div:hover article > h2 {
+  bottom: 2.8vh;
+  font-size: 2vh;
+}
+body > div article:hover > h2 {
+  bottom: 2.2vh;
+  font-size: 3vh;
+}
+
+/* Article layouts */
+article > div {
+  text-align: left;
+  width: 58vw;
+}
+article > div p,
+article > div h2,
+article > div h3 {
+  margin: 0 0 1em 0;
+  width: 30vw;
+}
+article > div p {
+  width: 30vw;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:after {
+  content: " >";
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.col-6 {
+  width: 50%;
+  float: left;
+}
+
+
+/* Mobile */
+@media (max-width: 1000px) {
+  body > div article {
+    padding: 2vh 3vw;
+  }
+  body > div article > h2 {
+    
+    transform: rotate(90deg);
+    top: 3rem;
+    left: 70%;
+    min-width: 12em;
+    text-align: left;
+    transform-origin: 0 0 0;
+    opacity: 1;
+    height:0px
+  }
+  body > div article:hover > h2 {
+    opacity: 0;
+  }
+  article div {
+    max-height: calc(100% - 28vh);
+    overflow-y: auto;
+  }
+  article div article div p {
+    width: 50vw;
+  }
+}
